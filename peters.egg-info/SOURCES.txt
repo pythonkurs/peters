@@ -1,0 +1,10 @@
+setup.cfg
+setup.py
+peters/__init__.py
+peters/xml_parser.py
+peters.egg-info/PKG-INFO
+peters.egg-info/SOURCES.txt
+peters.egg-info/dependency_links.txt
+peters.egg-info/entry_points.txt
+peters.egg-info/not-zip-safe
+peters.egg-info/top_level.txt
