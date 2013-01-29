@@ -5,6 +5,7 @@ version = '0.2'
 
 setup(name='peters',
       version=version,
+      scripts = ['scripts/getting_data.py'],
       description="Python Course 2013",
       long_description="""\
 """,
