@@ -5,7 +5,10 @@ version = '0.2'
 
 setup(name='peters',
       version=version,
-      scripts = ['scripts/getting_data.py'],
+      install_requires=[
+      "untangle",
+      ],
+      scripts = ['scripts/getting_data.py','scripts/check_repo.py'],
       description="Python Course 2013",
       long_description="""\
 """,
@@ -18,9 +21,6 @@ setup(name='peters',
       packages=find_packages(exclude=['ez_setup', 'examples', 'tests']),
       include_package_data=True,
       zip_safe=False,
-      install_requires=[
-          # -*- Extra requirements: -*-
-      ],
       entry_points="""
       # -*- Entry points: -*-
       """,

@@ -5,4 +5,3 @@ surname = path.split("/")[-1]
 cd = change_dir(path)
 cm = CourseRepo(surname)
 print cm.check()
-cd.__exit__()

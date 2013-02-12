@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
-from peters import read_data
-from peters import calc_status_repair 
+from peters.session2 import read_data
+from peters.session2 import calc_status_repair 
 
 
 doc = read_data()

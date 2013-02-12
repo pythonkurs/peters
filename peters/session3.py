@@ -2,8 +2,11 @@ import os
 class change_dir(object):
 	def __init__(self,dir_new):
 		self.dir_new = dir_new
+
+	def __enter__(self):	
 		self.dir_old = os.getcwd()
 		os.chdir(self.dir_new)
+
 	def __exit__(self):
 		os.chdir(self.dir_old)
 
