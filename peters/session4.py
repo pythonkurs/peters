@@ -42,8 +42,6 @@ def get_dataframe():
 	url = r"https://api.github.com/orgs/pythonkurs/"
 	user = raw_input("Enter your name: ")
 
-	#print parser.parse("2013-02-04T16:58:05Z")
-
 	password = getpass.getpass()
 
 
@@ -57,13 +55,18 @@ def get_dataframe():
 	return df
 
 def analyse_dataframe(df):
+	dic_weekday = {0:"Monday",1:"Tuesday",2:"Wednesday",3:"Thursday",4:"Friday",5:"Saturday",6:"Sunday"}
 	dates = list(df.index)
-	week_dict = Counter()
-	print dates
-	"""for entry in dates:
-		parsed_time = parser.parse(entry)
-		week_dict.update(parsed_time.weekday())
-	print week_dict"""
+	week_day_list = []
+	hour_list = []
+	
+	for entry in dates:
+		week_day_list.append(entry.weekday())
+		hour_list.append(entry.hour)
+	week_dict = Counter(week_day_list)
+	hour_dict = Counter(hour_list)
+
+	print "The most common day for a commit is " + dic_weekday[week_dict.most_common(1)[0][0]] + " and the most common hour is " + str(hour_dict.most_common(1)[0][0]) +"."
 
 df = get_dataframe()
 analyse_dataframe(df)
