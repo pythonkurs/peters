@@ -1,0 +1,4 @@
+The most common day for a commit is Wednesday, there were so far 124 commits. 81 of them happened before 2 pm, just 3 after the course and 30 at the course. One can assume that most people try to get their tasks done close before the deadline.
+Most commits happened at working hours and on weekdays.
+The most common hour is 4 pm, followed by 12.
+
