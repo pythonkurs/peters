@@ -7,6 +7,10 @@ setup(name='peters',
       version=version,
       install_requires=[
       "untangle",
+      "requests",
+      "dateutil",
+      "numpy",
+      "pandas"
       ],
       scripts = ['scripts/getting_data.py','scripts/check_repo.py'],
       description="Python Course 2013",
