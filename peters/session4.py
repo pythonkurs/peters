@@ -40,11 +40,11 @@ def get_repos(user,password,url):
 
 def get_dataframe():
 	url = r"https://api.github.com/orgs/pythonkurs/"
-	user = "chrisp01" #raw_input("Enter your name: ")
+	user = raw_input("Enter your name: ")
 
 	#print parser.parse("2013-02-04T16:58:05Z")
 
-	password = "20ma53"#getpass.getpass()
+	password = getpass.getpass()
 
 
 
