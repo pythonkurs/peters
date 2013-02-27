@@ -1,0 +1,14 @@
+Timer unit: 1e-06 s
+
+File: scripts/getting_data.py
+Function: main at line 6
+Total time: 0.761519 s
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+     6                                           @profile
+     7                                           def main():
+     8         1       759910 759910.0     99.8  	doc = read_data()
+     9         1         1499   1499.0      0.2  	iCounterRepair, iCounterAll = calc_status_repair(doc)
+    10         1          110    110.0      0.0  	print str(iCounterRepair) + " out of " + str(iCounterAll) + " are under repair ("+ '%.1f' % (iCounterRepair/float(iCounterAll/100.0))  +"%)."
+

@@ -1,0 +1,26 @@
+False
+Filename: scripts/check_repo.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+     4                             @profile
+     5     6.430 MB     0.000 MB   def main(argvs):
+     6     6.434 MB     0.004 MB   	path = argvs[1]
+     7     6.434 MB     0.000 MB   	surname = path.split("/")[-1]
+     8     6.434 MB     0.000 MB   	cd = change_dir(path)
+     9     6.434 MB     0.000 MB   	cm = CourseRepo(surname)
+    10     6.438 MB     0.004 MB   	print cm.check()
+
+
+Filename: peters/session3.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    25                             	@profile
+    26     6.434 MB     0.000 MB   	def check(self):
+    27     6.434 MB     0.000 MB   		for entry in self.required:
+    28     6.434 MB     0.000 MB   			if os.path.exists(entry) == False:
+    29     6.434 MB     0.000 MB   				return False
+    30                             		return True
+
+

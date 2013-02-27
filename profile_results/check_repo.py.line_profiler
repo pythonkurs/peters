@@ -1,0 +1,16 @@
+Timer unit: 1e-06 s
+
+File: scripts/check_repo.py
+Function: main at line 4
+Total time: 0.000245 s
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+     4                                           @profile
+     5                                           def main(argvs):
+     6         1            5      5.0      2.0  	path = argvs[1]
+     7         1            8      8.0      3.3  	surname = path.split("/")[-1]
+     8         1            9      9.0      3.7  	cd = change_dir(path)
+     9         1           27     27.0     11.0  	cm = CourseRepo(surname)
+    10         1          196    196.0     80.0  	print cm.check()
+

@@ -1,0 +1,23 @@
+True
+         28 function calls in 0.001 seconds
+
+   Ordered by: standard name
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000    0.000    0.000 __init__.py:1(<module>)
+        1    0.001    0.001    0.001    0.001 check_repo.py:1(<module>)
+        7    0.000    0.000    0.000    0.000 genericpath.py:15(exists)
+        1    0.000    0.000    0.000    0.000 session3.py:1(<module>)
+        1    0.000    0.000    0.000    0.000 session3.py:13(CourseRepo)
+        1    0.000    0.000    0.000    0.000 session3.py:14(__init__)
+        2    0.000    0.000    0.000    0.000 session3.py:17(surname)
+        1    0.000    0.000    0.000    0.000 session3.py:2(change_dir)
+        1    0.000    0.000    0.000    0.000 session3.py:21(surname)
+        1    0.000    0.000    0.000    0.000 session3.py:26(check)
+        1    0.000    0.000    0.000    0.000 session3.py:3(__init__)
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+        1    0.000    0.000    0.000    0.000 {method 'setter' of 'property' objects}
+        1    0.000    0.000    0.000    0.000 {method 'split' of 'str' objects}
+        7    0.000    0.000    0.000    0.000 {posix.stat}
+
+

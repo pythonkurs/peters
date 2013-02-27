@@ -1,0 +1,12 @@
+19 out of 38 are under repair (50.0%).
+Filename: scripts/getting_data.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+     6                             @profile
+     7     6.445 MB     0.000 MB   def main():
+     8     8.098 MB     1.652 MB   	doc = read_data()
+     9     8.113 MB     0.016 MB   	iCounterRepair, iCounterAll = calc_status_repair(doc)
+    10     8.121 MB     0.008 MB   	print str(iCounterRepair) + " out of " + str(iCounterAll) + " are under repair ("+ '%.1f' % (iCounterRepair/float(iCounterAll/100.0))  +"%)."
+
+
