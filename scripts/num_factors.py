@@ -52,23 +52,22 @@ def ipython_parallel():
             else:
                 p += 1
 
-    result = factorize.map(range(2, 500000))
+    result = factorize.map(range(2, 500001))
     print(Counter(result))
 
 
 def multi():
     import multiprocessing
     pool = multiprocessing.Pool(processes=2)
-    result = pool.map(factorize, range(2, 500000))
+    result = pool.map(factorize, range(2, 500001))
     print(Counter(result))
 
 
 def normal():
     list_num_unique = []
 
-    for i in range(2, 500000):
-        temp_factor_list = factorize(i)
-        list_num_unique.append(temp_factor_list)
+    for i in range(2, 500001):
+        list_num_unique.append(factorize(i))
 
     print Counter(list_num_unique)
 
